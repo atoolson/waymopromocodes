@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="canonical" href="https://waymopromocode.com" />
+  <title>Redirecting...</title>
+
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-32HW2DHNZW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-32HW2DHNZW');
+    // Fire a custom event so you can see redirect hits distinctly in GA
+    gtag('event', 'redirect_hit', {
+      'source_domain': 'waymopromocodes.com',
+      'target_domain': 'waymopromocode.com'
+    });
+  </script>
+
+  <!-- Small delay so GA pixel has a chance to fire before the redirect -->
+  <meta http-equiv="refresh" content="1; url=https://waymopromocode.com" />
+</head>
+<body>
+  <script>
+    // Redirect after ~800ms to give GA time to beacon
+    setTimeout(function(){ window.location.replace("https://waymopromocode.com"); }, 800);
+  </script>
+  <p>Redirecting to <a href="https://waymopromocode.com">waymopromocode.com</a>...</p>
+</body>
+</html>
