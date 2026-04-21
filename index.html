@@ -20,8 +20,10 @@
     });
   </script>
 
-  <!-- Small delay so GA pixel has a chance to fire before the redirect -->
-  <meta http-equiv="refresh" content="1; url=https://waymopromocode.com" />
+  <!-- Fallback for users with JS disabled: delayed meta-refresh (noscript-gated so crawlers don't follow it during verification) -->
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=https://waymopromocode.com" />
+  </noscript>
 </head>
 <body>
   <script>
