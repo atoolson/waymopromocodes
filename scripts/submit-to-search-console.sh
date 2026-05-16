@@ -3,7 +3,7 @@ set -euo pipefail
 
 SITE_URL="https://waymopromocodes.com/"
 SITEMAP_URL="https://waymopromocodes.com/sitemap.xml"
-SCOPES="https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/webmasters https://www.googleapis.com/auth/siteverification"
+SCOPES="https://www.googleapis.com/auth/cloud-platform,https://www.googleapis.com/auth/webmasters,https://www.googleapis.com/auth/siteverification"
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
 if ! command -v gcloud >/dev/null 2>&1; then
